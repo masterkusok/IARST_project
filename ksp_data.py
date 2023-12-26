@@ -1,6 +1,5 @@
 import krpc
 import matplotlib.pyplot as plt
-import time
 
 
 def get_magnitude(vector):
@@ -33,9 +32,8 @@ while True:
     print(angular_speed)
 
     # Проверка условия завершения сбора данных
-    if altitude > 100000:
+    if altitude > 3_000_000:
         break
-    time.sleep(1)
 
 fig, axs = plt.subplots(nrows=3, figsize=(8, 8))
 
